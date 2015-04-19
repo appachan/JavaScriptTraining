@@ -25,7 +25,7 @@ describe('ステージ2（意図した通りに DOM 要素の属性・テキス�
       // ここにコードを記述してください。
       // 変更した DOM 要素は element 変数に代入してください。
       var element = document.getElementById('chocolate');
-      element.textContent = element.textContent + element.textContent; 
+      element.textContent = element.textContent + element.textContent;
 
       expect(element).to.have.property(secret('vq'), secret('pubpbyngr'));
       expect(element).to.have.deep.property(
@@ -78,7 +78,7 @@ describe('ステージ2（意図した通りに DOM 要素の属性・テキス�
 
       // ここにコードを記述してください。
       // 変更した DOM 要素は element 変数に代入してください。
-      var element = document.querySelector('blockquote'); // getElementsByTagName =>　error
+      var element = document.querySelector('blockquote'); // getElementsByTagName=>error
       element.style.transform = 'rotate(10deg)';
       // $element.css({transform:'rotate(10deg)'});
 
@@ -103,7 +103,7 @@ describe('ステージ2（意図した通りに DOM 要素の属性・テキス�
       // 使う方法を使ってください。
       var element = document.querySelector("[data-js-training='blueviolet']");
       element.style.position = 'relative';
-      element.style.top = '-20px'; 
+      element.style.top = '-20px';
 
       expect(element).to.have.deep.property(
         secret('qngnfrg.wfGenvavat'), secret('oyhrivbyrg'));
@@ -164,7 +164,7 @@ describe('ステージ2（意図した通りに DOM 要素の属性・テキス�
       // ここにコードを記述してください。
       // 変更した DOM 要素は $element 変数に代入してください。
       var $element = $('.limegreen');
-      $element.css("background-color", 'mediumseagreen');
+      $element.css('background-color', 'mediumseagreen');
 
 
       expect($element).to.be.instanceof(jQuery);
@@ -196,7 +196,7 @@ describe('ステージ2（意図した通りに DOM 要素の属性・テキス�
       // ここにコードを記述してください。
       // 変更した DOM 要素は $element 変数に代入してください。
       var $element = $('.js-training p');
-      $element.css({transform:'rotate(10deg)'});
+      $element.css({transform: 'rotate(10deg)'});
 
 
       expect($element).to.be.instanceof(jQuery);
